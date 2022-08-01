@@ -1,0 +1,14 @@
+// Media screen brakes
+$tablet: 768px;
+$desktop: 1680px;
+
+// container's padding
+$container-padding-mobile: 20px;
+$container-padding-tablet: 40px;
+$container-padding-desktop: 183px;
+
+// Animation
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// Container's maximum width
+$container-max-width: 1680px;

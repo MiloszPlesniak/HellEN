@@ -1,0 +1,16 @@
+// Mobile 320-768//
+.container {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-mobile;
+  padding-right: $container-padding-mobile;
+  width: 100%;
+}
+// Tablet 768-1680//
+@media screen and (min-width: $tablet) {
+}
+
+// Desktop 1680+//
+@media screen and (min-width: $desktop) {
+}
