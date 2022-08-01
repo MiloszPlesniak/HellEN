@@ -5,3 +5,18 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+
+//base
+@import './base/container';
+
+//components
+@import './components/logo.scss';
+
+//layout
+@import './layout/header';
+
+//thenes
+
+
+//utils
+@import './utils/variables';
