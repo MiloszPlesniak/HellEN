@@ -11,33 +11,33 @@
   line-height: 15px;
   letter-spacing: 0.08em;
   cursor: pointer;
-  border: 2px solid $orange;
+  border: 2px solid $bg-color1;
   text-transform: uppercase;
 
   &--transparent {
-    color: $orange;
-    background-color: #fff;
+    color: $bg-color1;
+    background-color: $bg-color3;
     transition: $transition;
     transition-property: background-color, color;
     &:hover {
-      color: #fff;
-      background-color: $orange;
+      color: $bg-color3;
+      background-color: $bg-color1;
     }
   }
   &--color {
-    color: #fff;
-    background-color: $orange;
+    color: $bg-color3;
+    background-color: $bg-color1;
     transition: $transition;
     transition-property: background-color, color;
     &:hover {
-      color: $orange;
-      background-color: #fff;
+      color: $bg-color1;
+      background-color: $bg-color3;
     }
   }
 }
 
 // Tablet 768-1680//
-@media screen and (min-width: $tablet) {
+@include tablet {
   .button {
     width: 260px;
     height: 48px;
@@ -48,7 +48,7 @@
 }
 
 // Desktop 1680+//
-@media screen and (min-width: $desktop) {
+@include desktop {
   .button {
     width: 354px;
     height: 70px;
