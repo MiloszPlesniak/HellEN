@@ -14,7 +14,9 @@
 @import './vendors/normalize';
 
 // 3. Base stuff
+@import './base/common';
 @import './base/container';
+@import './base/section';
 
 
 // 4. Layout-related sections
