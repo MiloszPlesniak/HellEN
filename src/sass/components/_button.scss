@@ -1,0 +1,37 @@
+.button {
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    border: 2px solid $orange;
+    text-transform: uppercase;
+
+    &--transparent {
+      color: $orange;
+      background-color: #fff;
+      transition: $transition;
+      transition-property: background-color, color;
+      &:hover {
+        color: #fff;
+        background-color: $orange;
+      }
+    }
+    &--color {
+      color: #fff;
+      background-color: $orange;
+      transition: $transition;
+      transition-property: background-color, color;
+      &:hover {
+        color: $orange;
+        background-color: #fff;
+      }
+    }
+  }
+  
