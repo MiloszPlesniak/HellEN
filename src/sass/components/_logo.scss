@@ -1,1 +1,37 @@
-///test
+.logo {
+    
+  &__title {
+    
+    font-family: $mainFont;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+   
+
+    &--shadow {
+      font-weight: 800;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__discription {
+    padding-top: 3px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &--color {
+      color: $bg-color1;
+    }
+  }
+  &__flame {
+    margin-bottom: -5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 22px;
+    height: 30px;
+    fill: $bg-color1;
+  }
+}
