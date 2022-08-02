@@ -1,37 +1,59 @@
 .button {
-    height: 70px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    cursor: pointer;
-    border: 2px solid $orange;
-    text-transform: uppercase;
+  width: 260px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border: 2px solid $orange;
+  text-transform: uppercase;
 
-    &--transparent {
-      color: $orange;
-      background-color: #fff;
-      transition: $transition;
-      transition-property: background-color, color;
-      &:hover {
-        color: #fff;
-        background-color: $orange;
-      }
-    }
-    &--color {
+  &--transparent {
+    color: $orange;
+    background-color: #fff;
+    transition: $transition;
+    transition-property: background-color, color;
+    &:hover {
       color: #fff;
       background-color: $orange;
-      transition: $transition;
-      transition-property: background-color, color;
-      &:hover {
-        color: $orange;
-        background-color: #fff;
-      }
     }
   }
-  
+  &--color {
+    color: #fff;
+    background-color: $orange;
+    transition: $transition;
+    transition-property: background-color, color;
+    &:hover {
+      color: $orange;
+      background-color: #fff;
+    }
+  }
+}
+
+// Tablet 768-1680//
+@media screen and (min-width: $tablet) {
+  .button {
+    width: 260px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
+  }
+}
+
+// Desktop 1680+//
+@media screen and (min-width: $desktop) {
+  .button {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
+  }
+}
