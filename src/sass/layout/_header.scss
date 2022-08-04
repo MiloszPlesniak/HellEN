@@ -1,9 +1,29 @@
 // Mobile 320-768//
+.header {
+  font-family: $mainFont;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+
+  &__dark {
+    color: $text-color1;
+  }
+  &__light {
+    color: $text-color2;
+  }
+}
 
 // Tablet 768-1680//
 @media screen and (min-width: $tablet) {
+  .header {
+    font-size: 26px;
+  }
 }
 
 // Desktop 1680+//
 @media screen and (min-width: $desktop) {
+  .header {
+    font-size: 46px;
+  }
 }
